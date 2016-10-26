@@ -7,7 +7,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .inner{
-    /*    background:red;*/
     padding:0 120px;
 }
 .clearFix:after{
@@ -35,7 +34,7 @@ header{
 nav{
     float:right;
     position:relative;
-    z-index: 1;
+    z-index: 2;
 }
 .clearFix:after{
     clear:both;
@@ -50,12 +49,12 @@ nav li a{
     text-decoration:none;
     padding:11px 12px;
     font-size:14px;
-    /*    color:rgba(255,255,255,.5);*/
-    color:red;
+    color:#fff;
     text-transform: capitalize;
 }
 nav li a:hover{
     color:#fff;
+    transition: all 0.4s;
 }
 .nav-bar{
     padding:35px 0 30px 0;
@@ -113,12 +112,14 @@ h1{
 }
 .banner_btns a:hover{
     background:rgb(239, 98, 73);
+    transition: all 0.4s;
 }
 .header_icons{
     margin-right: 10px;
 }
 .desc_p a:hover{
     color:rgb(239, 98, 73);
+    transition: all 0.4s;
 }
 /*=====================social_nav=================*/
 
@@ -140,7 +141,7 @@ h1{
     justify-content:space-around;
     align-items:center;
     z-index: 10;
-    box-shadow: 0  10px 10px #A9A9A9;
+    box-shadow: 0px 9px 25px -8px rgba(0, 0, 0, 0.38);
 }
 .social_nav img{
     width:10%;
@@ -152,7 +153,7 @@ h1{
     margin-left:-10px;
     z-index: 3;
     position:relative;
-    box-shadow: 0 20px 20px #696969;
+    box-shadow: 0px 6px 62px -6px rgba(0, 0, 0, 0.3);
 }
 .aside_img{
     position: relative;
@@ -193,6 +194,7 @@ h3{
 }
 .article_btn:hover{
     background:rgb(239, 98, 73);
+    transition: all 0.4s;
 }
 .article_desc{
     color:#848484;
@@ -211,7 +213,7 @@ h3{
     position: relative;
     bottom: -10px;
     /*right:50px;*/
-    box-shadow: 0 20px 20px #696969;
+    box-shadow:0px 6px 62px -6px rgba(0, 0, 0, 0.3);
 
 }
 .aside_img2{
@@ -309,9 +311,6 @@ img.article_img2 {
     background: #ef6249;
 
 }
-.box{
-    background: red;
-}
 .container_services_block{
     padding:50px 50px;
     display:flex;
@@ -369,14 +368,15 @@ img.article_img2 {
     margin-bottom: 30px;
 }
 
-.client_1 {
+.clients {
     position: relative;
     background: #fff;
-    box-shadow: 5px 5px 10px #ef6249;
+    box-shadow: 5px 6px 7px -6px rgba(0, 0, 0, 0.22);
     padding:30px;
+    border-radius: 15px;
 
 }
-.client_1:after {
+.clients:after {
     top: 100%;
     left: 50px;
     border: solid transparent;
@@ -476,6 +476,7 @@ img.article_img2 {
 }
 .img_btn:hover{
     background:rgb(239, 98, 73);
+    transition: all 0.4s;
 }
 .col_imgs_heading{
     font-size:20px;
@@ -487,6 +488,7 @@ img.article_img2 {
 }
 .col_imgs_heading:hover{
     color:#ef6249;
+    transition: all 0.4s;
 }
 .col_imgs_desc a, .other_services a{
     text-decoration: none;
@@ -506,6 +508,7 @@ footer li a{
 }
 footer a:hover{
     color:#ef6249;
+    transition: all 0.4s;
 }
 .footer_desc{
     color:#848484;
@@ -516,6 +519,8 @@ footer{
     padding:50px 80px;
     display:flex;
     justify-content:space-between;
+    position: relative;
+    /*    width:100%;*/
 }
 .footer_clm_headings{
     display: block;
@@ -532,4 +537,67 @@ footer{
 .social_media a{
     font-size: 18px;
     margin-bottom: 14px;
+}
+.social_logo{
+    margin-left: 15px;
+}
+footer:after{
+    content: '';
+    width:100%;
+    border-bottom:1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.footer_copyright{
+    background: #2F3032;
+    text-align: center;
+    color:#848484;
+    padding:50px;
+}
+.footer_copyright a {
+    color:#fff;
+    text-decoration: none;
+}
+.footer_copyright a:hover{
+    color:#ef6249;
+    transition: all 0.4s;
+}
+.company_rights{
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height:1.5;
+}
+.our_servicesc_col1{
+    padding-left: 100px;
+}
+.our_servicesc_col2{
+    padding-right: 100px;
+}
+/*----------------DropDown-------------------*/
+.menu li {
+    position: relative;
+
+}
+
+.dropdown {
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100px;
+    z-index: 1000;
+    display: none;
+
+}
+
+.dropdown li {
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.dropdown li a {
+
+    padding:30px;
 }

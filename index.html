@@ -22,9 +22,18 @@ and open the template in the editor.
                         <h3>Resolution</h3>
                     </div>
                     <nav>
-                        <ul>
+                        <ul class="menu">
                             <li><a href="#">home</a></li>
-                            <li><a href="#">work</a></li>
+                            <li><a href="#">work</a>
+                                <ul class="dropdown">
+                                    <li> <a href="#">build</a></li>
+                                    <li> <a href="#">work</a></li>
+                                    <li> <a href="#">light</a></li>
+                                    <li> <a href="#">display</a></li>
+
+                                </ul>
+
+                            </li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">about</a></li>
                             <li><a href="#">blog</a></li>
@@ -34,12 +43,15 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="inner">
+
                 <div class="desc">
-                    <h1>capture every <span class="good">good</span> things</h1>
+                    <div class="heading">
+                        <h1>capture every <span class="good"> good </span> things</h1>
+                    </div>
                     <p class="desc_p">lovely crafted by<a href="#">Veeraj@github</a></p>
 
                     <div class="banner_btns">
-                        <a href="#"><i class="header_icons fa fa-leanpub"></i> Learn More</a>
+                        <a href="#"> Learn More</a>
                         <a href="#"><i class="header_icons fa fa-play"></i>watch Video</a>
                     </div>
 
@@ -179,7 +191,7 @@ and open the template in the editor.
         </div>
         <div class="our_work_container clients_container container_services_block clients_row client_flex">
             <div class="column">
-                <div class="client_1">
+                <div class="clients">
 
                     <blockquote class="clients_word"> If you’re looking for a top quality hotel look no further. We were upgraded free of charge to the Premium Suite, thanks so much</blockquote>
 
@@ -193,7 +205,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="column">
-                <div class="client_1">
+                <div class="clients">
 
                     <blockquote class="clients_word"> Me and my wife had a delightful weekend get away here, the staff were so friendly and attentive. Highly Recommended</blockquote>
 
@@ -207,7 +219,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="column">
-                <div class="client_1">
+                <div class="clients">
 
                     <blockquote class="clients_word"> If you’re looking for a top quality hotel look no further. We were upgraded free of charge to the Premium Suite, thanks so much</blockquote>
 
@@ -231,7 +243,7 @@ and open the template in the editor.
         </div>
         <div class="blog_row_container">
             <div class="blog_column">
-                <a href="#"><img class="col_imgs" src="images/col_1.jpg"></a>
+                <a href="#"><img class="col_imgs" src="images/col_1.jpg" alt=""></a>
                 <div class="col_imgs_desc_innercontainer">
                     <div class="col_imgs_desc">
                         <a href="#"><h3 class="col_imgs_heading">45 Minimal Worksspace Rooms for Web Savvys</h3></a>
@@ -248,7 +260,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="blog_column">
-                <a href="#"><img class="col_imgs" src="images/col_2.jpg"></a>
+                <a href="#"><img class="col_imgs" src="images/col_2.jpg" alt=""></a>
                 <div class="col_imgs_desc_innercontainer">
                     <div class="col_imgs_desc">
                         <a href="#"><h3 class="col_imgs_heading">45 Minimal Worksspace Rooms for Web Savvys</h3></a>
@@ -265,7 +277,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="blog_column">
-                <a href="#"><img class="col_imgs" src="images/col_3.jpg"></a>
+                <a href="#"><img class="col_imgs" src="images/col_3.jpg" alt=''></a>
                 <div class="col_imgs_desc_innercontainer">
                     <div class="col_imgs_desc">
                         <a href="#"><h3 class="col_imgs_heading">45 Minimal Worksspace Rooms for Web Savvys</h3></a>
@@ -287,7 +299,7 @@ and open the template in the editor.
                 <span class="footer_clm_headings">about us</span>
                 <p class="footer_desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
-            <div class="footer_clm">
+            <div class="footer_clm our_servicesc_col1">
                 <span class="footer_clm_headings">our services</span>
                 <ul class="footer_services">
                     <li><a href="#">Web Design</a></li>
@@ -297,7 +309,7 @@ and open the template in the editor.
 
                 </ul>
             </div>
-            <div class="footer_clm">
+            <div class="footer_clm our_servicesc_col2">
                 <ul class="other_services">
                     <li><a href="#">bootstrap template</a></li>
                     <li><a href="#">html5 template</a></li>
@@ -308,16 +320,22 @@ and open the template in the editor.
             <div class="footer_clm">
                 <span class="footer_clm_headings">follow us</span>
                 <ul class="social_media">
-                    <li><a href="#" class="fa fa-twitter footer_icons" aria-hidden="true" >twitter</a></li>
-                    <li><a href="#" class="fa fa-facebook-square footer_icons" aria-hidden="true" >facebook</a></li>
-                    <li><a href="#" class="fa fa-google-plus-square footer_icons" aria-hidden="true" >google plus</a></li>
-                    <li><a href="#" class="fa fa-instagram footer_icons" aria-hidden="true" >instagram</a></li>
+                    <li><a href="#" class="fa fa-twitter footer_icons" aria-hidden="true" ><span class="social_logo">twitter</span></a></li>
+                    <li><a href="#" class="fa fa-facebook-square footer_icons" aria-hidden="true" ><span class="social_logo">facebook</span></a></li>
+                    <li><a href="#" class="fa fa-google-plus-square footer_icons" aria-hidden="true" ><span class="social_logo">google plus</span></a></li>
+                    <li><a href="#" class="fa fa-instagram footer_icons" aria-hidden="true" ><span class="social_logo">instagram</span></a></li>
 
 
                 </ul>
             </div>
 
         </footer>
+        <div class="footer_copyright">
+            <p class="company_rights">&copy 2016 Free HTML5 template. All Rights Reserved.<br>designed with
+                <i class="fa fa-heart-o" aria-hidden="true"></i> made by <a href="#"> Veeraj@github</a> demo images by<a href="pixabay.com"> Pixabay</a>
+
+            </p>
+        </div>
     </body>
 
 </html>
