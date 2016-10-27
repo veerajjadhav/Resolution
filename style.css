@@ -582,22 +582,34 @@ footer:after{
 }
 
 .dropdown {
-    background: red;
+    background: rgba(41, 34, 43, 0.5);
     position: absolute;
-    left: 0;
-    top: 30px;
+    left:10px;
+    top: 28px;
     width: 100px;
     z-index: 1000;
     display: none;
+    border-radius: 10px;
+
 
 }
+.dropdown a:hover{
+    color:rgb(239, 98, 73);
 
+}
+.fa-chevron-down:before{
+    margin-left: 5px;
+}
 .dropdown li {
     width: 100%;
-    margin-bottom: 30px;
+    margin-top: 20px;
 
 }
 .dropdown li a {
 
-    padding:30px;
+    padding: 5px 5px 5px 5px;
+}
+nav li:hover .dropdown{
+    display: block;
+
 }
